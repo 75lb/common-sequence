@@ -1,13 +1,15 @@
 [![view on npm](http://img.shields.io/npm/v/common-sequence.svg)](https://www.npmjs.org/package/common-sequence)
-[![npm module downloads per month](http://img.shields.io/npm/dm/common-sequence.svg)](https://www.npmjs.org/package/common-sequence)
+[![npm module downloads per month](http://img.shields.io/npm/dt/common-sequence.svg)](https://www.npmjs.org/package/common-sequence)
 [![Build Status](https://travis-ci.org/75lb/common-sequence.svg?branch=master)](https://travis-ci.org/75lb/common-sequence)
 [![Dependency Status](https://david-dm.org/75lb/common-sequence.svg)](https://david-dm.org/75lb/common-sequence)
+[![Dependency Status](https://badgen.net/david/dep/75lb/common-sequence)](https://david-dm.org/75lb/common-sequence)
 
 <a name="module_common-sequence"></a>
+
 ## common-sequence
 Returns an array containing the initial elements which both input arrays have in common.
 
-A common use-case for this is discovering common ancestors between two file paths. 
+A common use-case for this is discovering common ancestors between two file paths.
 
 ```js
 > commonSequence = require("common-sequence");
@@ -26,6 +28,7 @@ or a more trivial example:
 ```
 
 <a name="exp_module_common-sequence--commonSequence"></a>
+
 ### commonSequence(a, b) ⇒ <code>Array</code> ⏏
 Returns the initial elements which both input arrays have in common
 

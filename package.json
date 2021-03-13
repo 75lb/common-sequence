@@ -26,9 +26,9 @@
     "dist": "rollup -f umd -n commonSequence -o dist/index.js index.mjs"
   },
   "devDependencies": {
-    "jsdoc-to-markdown": "^5.0.1",
-    "rollup": "^1.21.4",
-    "test-runner": "^0.6.0"
+    "jsdoc-to-markdown": "^7.0.0",
+    "rollup": "^2.41.2",
+    "test-runner": "^0.6.3"
   },
   "files": [
     "index.mjs",

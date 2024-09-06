@@ -2,7 +2,7 @@
 [![npm module downloads](https://badgen.net/npm/dt/common-sequence)](https://www.npmjs.org/package/common-sequence)
 [![Gihub repo dependents](https://badgen.net/github/dependents-repo/75lb/common-sequence)](https://github.com/75lb/common-sequence/network/dependents?dependent_type=REPOSITORY)
 [![Gihub package dependents](https://badgen.net/github/dependents-pkg/75lb/common-sequence)](https://github.com/75lb/common-sequence/network/dependents?dependent_type=PACKAGE)
-[![Build Status](https://travis-ci.org/75lb/common-sequence.svg?branch=master)](https://travis-ci.org/75lb/common-sequence)
+[![Node.js CI](https://github.com/75lb/common-sequence/actions/workflows/node.js.yml/badge.svg)](https://github.com/75lb/common-sequence/actions/workflows/node.js.yml)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](https://github.com/feross/standard)
 
 <a name="module_common-sequence"></a>
@@ -71,4 +71,4 @@ Old browser (adds `window.commonSequence`):
 
 * * *
 
-&copy; 2015-21 Lloyd Brookes \<75pound@gmail.com\>. Documented by [jsdoc-to-markdown](https://github.com/jsdoc2md/jsdoc-to-markdown).
+&copy; 2015-25 Lloyd Brookes \<75pound@gmail.com\>. Documented by [jsdoc-to-markdown](https://github.com/jsdoc2md/jsdoc-to-markdown).

@@ -1,3 +1,5 @@
+'use strict';
+
 /**
  * Returns an array containing the initial elements which both input arrays have in common.
  *
@@ -20,7 +22,7 @@
  * ```
  * @module common-sequence
  */
-module.exports = commonSequence
+
 
 /**
  * Returns the initial elements which both input arrays have in common
@@ -30,13 +32,15 @@ module.exports = commonSequence
  * @alias module:common-sequence
  */
 function commonSequence (a, b) {
-  var result = []
+  var result = [];
   for (var i = 0; i < Math.min(a.length, b.length); i++) {
     if (a[i] === b[i]) {
-      result.push(a[i])
+      result.push(a[i]);
     } else {
       break
     }
   }
   return result
 }
+
+module.exports = commonSequence;

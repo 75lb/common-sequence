@@ -1,7 +1,7 @@
 {
   "name": "common-sequence",
   "author": "Lloyd Brookes <75pound@gmail.com>",
-  "version": "2.0.2",
+  "version": "3.0.0",
   "description": "Returns an array containing the initial elements which both input arrays have in common",
   "repository": "https://github.com/75lb/common-sequence",
   "license": "MIT",
@@ -28,8 +28,7 @@
     "docs": "75lb-nature jsdoc2md -t README.hbs index.js > README.md",
     "dist": "75lb-nature cjs-build index.js"
   },
-  "devDependencies": {
-  },
+  "devDependencies": {},
   "files": [
     "index.js",
     "dist"

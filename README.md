@@ -43,15 +43,15 @@ Returns the initial elements which both input arrays have in common
 
 ### Load anywhere
 
-This library is compatible with Node.js, the Web and any style of module loader. It can be loaded anywhere, natively without transpilation.
+This library is compatible with Node.js and the Web. It can be loaded anywhere, natively without transpilation.
 
-Node.js:
+Node.js CommonJS:
 
 ```js
 const commonSequence = require('common-sequence')
 ```
 
-Within Node.js with ECMAScript Module support enabled:
+Node.js ECMAScript Module:
 
 ```js
 import commonSequence from 'common-sequence'
@@ -60,13 +60,7 @@ import commonSequence from 'common-sequence'
 Within an modern browser ECMAScript Module:
 
 ```js
-import commonSequence from './node_modules/common-sequence/index.mjs'
-```
-
-Old browser (adds `window.commonSequence`):
-
-```html
-<script nomodule src="./node_modules/common-sequence/dist/index.js"></script>
+import commonSequence from './node_modules/common-sequence/index.js'
 ```
 
 * * *

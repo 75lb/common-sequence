@@ -1,5 +1,5 @@
 /**
- * Returns an array containing the initial elements which all supplied iterables have in common.
+ * Returns an array containing the initial items which all supplied iterables have in common.
  *
  * For example, it could tell you that the common ancestor path between `'/Users/lloyd/75lb/dmd'` and `'/Users/lloyd/75lb/array-tools'` is `'/Users/lloyd/75lb'`. Or that the common identation across a series of lines is four spaces.
  *
@@ -24,8 +24,9 @@
 
 /**
  * Returns the initial elements which both input iterables have in common
- * @param {Array} - first iterable to compare
- * @param {Array} - second iterable to compare
+ * @param a {Array} - first iterable to compare
+ * @param b {Array} - second iterable to compare
+ * @param ...n {Array} - nth iterable to compare
  * @returns {Array}
  * @alias module:common-sequence
  */

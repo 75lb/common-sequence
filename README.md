@@ -7,7 +7,7 @@
 <a name="module_common-sequence"></a>
 
 ## common-sequence
-Returns an array containing the initial elements which all supplied iterables have in common.
+Returns an array containing the initial items which all supplied iterables have in common.
 
 For example, it could tell you that the common ancestor path between `'/Users/lloyd/75lb/dmd'` and `'/Users/lloyd/75lb/array-tools'` is `'/Users/lloyd/75lb'`. Or that the common identation across a series of lines is four spaces.
 
@@ -29,15 +29,16 @@ or a more trivial example:
 
 <a name="exp_module_common-sequence--commonSequence"></a>
 
-### commonSequence() ⇒ <code>Array</code> ⏏
+### commonSequence(a, b) ⇒ <code>Array</code> ⏏
 Returns the initial elements which both input iterables have in common
 
 **Kind**: Exported function  
 
 | Param | Type | Description |
 | --- | --- | --- |
-|  | <code>Array</code> | first iterable to compare |
-|  | <code>Array</code> | second iterable to compare |
+| a | <code>Array</code> | first iterable to compare |
+| b | <code>Array</code> | second iterable to compare |
+| ...n | <code>Array</code> | nth iterable to compare |
 
 
 ### Load anywhere

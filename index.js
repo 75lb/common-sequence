@@ -1,7 +1,7 @@
 /**
- * Returns an array containing the initial elements which both input arrays have in common.
+ * Returns an array containing the initial elements which all supplied iterables have in common.
  *
- * A common use-case for this is discovering common ancestors between two file paths.
+ * For example, it could tell you that the common ancestor path between `'/Users/lloyd/75lb/dmd'` and `'/Users/lloyd/75lb/array-tools'` is `'/Users/lloyd/75lb'`. Or that the common identation across a series of lines is four spaces.
  *
  * ```js
  * > commonSequence = require('common-sequence');
@@ -23,17 +23,20 @@
 
 
 /**
- * Returns the initial elements which both input arrays have in common
- * @param {Array} - first array to compare
- * @param {Array} - second array to compare
+ * Returns the initial elements which both input iterables have in common
+ * @param {Array} - first iterable to compare
+ * @param {Array} - second iterable to compare
  * @returns {Array}
  * @alias module:common-sequence
  */
-function commonSequence (a, b) {
-  var result = []
-  for (var i = 0; i < Math.min(a.length, b.length); i++) {
-    if (a[i] === b[i]) {
-      result.push(a[i])
+function commonSequence () {
+  const result = []
+  const allInputs = Array.from(arguments).map(arg => Array.from(arg))
+  const first = allInputs[0]
+  const smallestInput = Math.min(...allInputs.map(i => i.length))
+  for (var i = 0; i < smallestInput; i++) {
+    if (allInputs.every(arr => arr[i] === first[i])) {
+      result.push(first[i])
     } else {
       break
     }

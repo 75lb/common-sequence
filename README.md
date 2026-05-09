@@ -3,14 +3,13 @@
 [![Gihub repo dependents](https://badgen.net/github/dependents-repo/75lb/common-sequence)](https://github.com/75lb/common-sequence/network/dependents?dependent_type=REPOSITORY)
 [![Gihub package dependents](https://badgen.net/github/dependents-pkg/75lb/common-sequence)](https://github.com/75lb/common-sequence/network/dependents?dependent_type=PACKAGE)
 [![Node.js CI](https://github.com/75lb/common-sequence/actions/workflows/node.js.yml/badge.svg)](https://github.com/75lb/common-sequence/actions/workflows/node.js.yml)
-[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](https://github.com/feross/standard)
 
 <a name="module_common-sequence"></a>
 
 ## common-sequence
-Returns an array containing the initial elements which both input arrays have in common.
+Returns an array containing the initial elements which all supplied iterables have in common.
 
-A common use-case for this is discovering common ancestors between two file paths.
+For example, it could tell you that the common ancestor path between `'/Users/lloyd/75lb/dmd'` and `'/Users/lloyd/75lb/array-tools'` is `'/Users/lloyd/75lb'`. Or that the common identation across a series of lines is four spaces.
 
 ```js
 > commonSequence = require('common-sequence');
@@ -30,15 +29,15 @@ or a more trivial example:
 
 <a name="exp_module_common-sequence--commonSequence"></a>
 
-### commonSequence(a, b) ⇒ <code>Array</code> ⏏
-Returns the initial elements which both input arrays have in common
+### commonSequence() ⇒ <code>Array</code> ⏏
+Returns the initial elements which both input iterables have in common
 
 **Kind**: Exported function  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| a | <code>Array</code> | first array to compare |
-| b | <code>Array</code> | second array to compare |
+|  | <code>Array</code> | first iterable to compare |
+|  | <code>Array</code> | second iterable to compare |
 
 
 ### Load anywhere
@@ -65,4 +64,4 @@ import commonSequence from './node_modules/common-sequence/index.js'
 
 * * *
 
-&copy; 2015-25 Lloyd Brookes \<75pound@gmail.com\>. Documented by [jsdoc-to-markdown](https://github.com/jsdoc2md/jsdoc-to-markdown).
+&copy; 2015-26 Lloyd Brookes \<opensource@75lb.com\>. Documented by [jsdoc-to-markdown](https://github.com/jsdoc2md/jsdoc-to-markdown).

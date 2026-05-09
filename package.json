@@ -1,9 +1,12 @@
 {
   "name": "common-sequence",
-  "author": "Lloyd Brookes <75pound@gmail.com>",
+  "author": "Lloyd Brookes <opensource@75lb.com>",
   "version": "3.0.0",
-  "description": "Returns an array containing the initial elements which both input arrays have in common",
-  "repository": "https://github.com/75lb/common-sequence",
+  "description": "Returns an array containing the initial elements which all input iterables have in common",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/75lb/common-sequence.git"
+  },
   "license": "MIT",
   "type": "module",
   "exports": {
@@ -18,7 +21,8 @@
     "compare",
     "parent",
     "array",
-    "sequence"
+    "sequence",
+    "iterable"
   ],
   "engines": {
     "node": ">=12.17"

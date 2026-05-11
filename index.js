@@ -1,3 +1,6 @@
+import arrayBack from 'array-back'
+import { isIterable } from 'typical'
+
 /**
  * Returns an array containing the initial items which all supplied iterables have in common.
  *
@@ -31,8 +34,14 @@
  * @alias module:common-sequence
  */
 function commonSequence () {
+  const args = arrayBack(arguments)
+  if (args.length === 0) {
+    return []
+  } else if (!args.every(a => isIterable(a))) {
+    throw new Error('Every arg supplied to commonSequence() must be an iterable')
+  }
   const result = []
-  const allInputs = Array.from(arguments).map(arg => Array.from(arg))
+  const allInputs = args.map(arg => Array.from(arg))
   const first = allInputs[0]
   const smallestInput = Math.min(...allInputs.map(i => i.length))
   for (var i = 0; i < smallestInput; i++) {

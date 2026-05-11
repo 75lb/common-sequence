@@ -41,4 +41,30 @@ test.set('four strings, matches', function () {
   a.deepEqual(result, expected)
 })
 
+test.set('undefined input', function () {
+  a.throws(
+    () => commonSequence(undefined),
+    /must be an iterable/
+  )
+})
+
+test.set('non iterable present', function () {
+  a.throws(
+    () => commonSequence('one', 1),
+    /must be an iterable/
+  )
+})
+
+test.set('no input', function () {
+  const expected = []
+  const result = commonSequence()
+  a.deepEqual(result, expected)
+})
+
+test.set('empty array input', function () {
+  const expected = []
+  const result = commonSequence([])
+  a.deepEqual(result, expected)
+})
+
 export { test, only, skip }

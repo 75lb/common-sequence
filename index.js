@@ -27,21 +27,21 @@ import { isIterable } from 'typical'
 
 /**
  * Returns the initial elements which both input iterables have in common
- * @param a {Array} - first iterable to compare
- * @param b {Array} - second iterable to compare
- * @param ...n {Array} - nth iterable to compare
+ * @param a {Iterable} - first iterable to compare
+ * @param b {Iterable} - second iterable to compare
+ * @param ...n {Iterable} - nth iterable to compare
  * @returns {Array}
  * @alias module:common-sequence
  */
 function commonSequence () {
-  const args = arrayBack(arguments)
-  if (args.length === 0) {
-    return []
-  } else if (!args.every(a => isIterable(a))) {
+  const iterables = arrayBack(arguments)
+  if (!iterables.every(a => isIterable(a))) {
     throw new Error('Every arg supplied to commonSequence() must be an iterable')
+  } else if (iterables.length <= 1) {
+    return []
   }
   const result = []
-  const allInputs = args.map(arg => Array.from(arg))
+  const allInputs = iterables.map(arg => Array.from(arg))
   const first = allInputs[0]
   const smallestInput = Math.min(...allInputs.map(i => i.length))
   for (var i = 0; i < smallestInput; i++) {

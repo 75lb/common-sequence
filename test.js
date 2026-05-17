@@ -67,4 +67,10 @@ test.set('empty array input', function () {
   a.deepEqual(result, expected)
 })
 
+test.set('one item input', function () {
+  const expected = []
+  const result = commonSequence('something')
+  a.deepEqual(result, expected)
+})
+
 export { test, only, skip }

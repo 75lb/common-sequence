@@ -10,6 +10,11 @@ Returns an array containing the initial items which all supplied iterables have 
 
 For example, it could tell you that the common ancestor path between `'/Users/lloyd/75lb/dmd'` and `'/Users/lloyd/75lb/array-tools'` is `'/Users/lloyd/75lb'`. Or that the common identation across a series of lines is four spaces.
 
+- **Type:** Package
+- **Supported runtimes:** Node.Js >= v12
+- **Module type:** JavaScript
+- **Exports:** One synchronous function
+
 #### Examples
 
 ```js
@@ -25,11 +30,6 @@ or a more trivial example:
 > commonSequence([ 1, 2, 3 ], [ 1, 2, 4 ])
 [ 1, 2 ]
 ```
-
-- **Type:** Package
-- **Supported runtimes:** Node.Js >= v12
-- **Module type:** JavaScript
-- **Exports:** One synchronous function
 
 ### commonSequence (a, b, ...n) : Array<any>
 

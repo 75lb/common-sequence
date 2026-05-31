@@ -7,12 +7,9 @@
     "type": "git",
     "url": "git+https://github.com/75lb/common-sequence.git"
   },
-  "license": "MIT",
+  "license": "See LICENCE file",
   "type": "module",
-  "exports": {
-    "import": "./index.js",
-    "require": "./dist/index.cjs"
-  },
+  "exports": "./index.js",
   "keywords": [
     "common",
     "path",
@@ -29,12 +26,10 @@
   },
   "scripts": {
     "test": "75lb-nature test-runner test.js",
-    "docs": "75lb-nature jsdoc2md -t README.hbs index.js > README.md",
-    "dist": "75lb-nature cjs-build index.js"
+    "docs": "75lb-nature jsdoc2md -t README.hbs index.js > README.md"
   },
   "files": [
-    "index.js",
-    "dist"
+    "index.js"
   ],
   "dependencies": {
     "array-back": "^6.2.3",

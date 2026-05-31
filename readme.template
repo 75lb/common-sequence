@@ -4,30 +4,24 @@
 [![Gihub package dependents](https://badgen.net/github/dependents-pkg/75lb/common-sequence)](https://github.com/75lb/common-sequence/network/dependents?dependent_type=PACKAGE)
 [![Node.js CI](https://github.com/75lb/common-sequence/actions/workflows/node.js.yml/badge.svg)](https://github.com/75lb/common-sequence/actions/workflows/node.js.yml)
 
-{{>main}}
+${blocks}
 
 ### Load anywhere
 
 This library is compatible with Node.js and the Web. It can be loaded anywhere, natively without transpilation.
 
-Node.js CommonJS:
-
-```js
-const commonSequence = require('common-sequence')
-```
-
 Node.js ECMAScript Module:
 
-```js
+\`\`\`js
 import commonSequence from 'common-sequence'
-```
+\`\`\`
 
 Within an modern browser ECMAScript Module:
 
-```js
+\`\`\`js
 import commonSequence from './node_modules/common-sequence/index.js'
-```
+\`\`\`
 
 * * *
 
-&copy; 2015-26 Lloyd Brookes \<opensource@75lb.com\>. Documented by [jsdoc-to-markdown](https://github.com/jsdoc2md/jsdoc-to-markdown).
+&copy; 2015-26 Lloyd Brookes \<opensource@75lb.com\>.

@@ -1,38 +1,63 @@
 import arrayBack from 'array-back'
 import { isIterable } from 'typical'
 
-/**
- * Returns an array containing the initial items which all supplied iterables have in common.
- *
- * For example, it could tell you that the common ancestor path between `'/Users/lloyd/75lb/dmd'` and `'/Users/lloyd/75lb/array-tools'` is `'/Users/lloyd/75lb'`. Or that the common identation across a series of lines is four spaces.
- *
- * ```js
- * > commonSequence = require('common-sequence');
- *
- * > pathA = '/Users/lloyd/Documents/75lb/dmd'.split('/');
- * > pathB = '/Users/lloyd/Documents/75lb/array-tools'.split('/');
- *
- * > commonSequence(pathA, pathB).join('/');
- * '/Users/lloyd/Documents/75lb'
- * ```
- *
- * or a more trivial example:
- * ```js
- * > a.commonSequence([ 1, 2, 3 ], [ 1, 2, 4 ])
- * [ 1, 2 ]
- * ```
- * @module common-sequence
- */
+/*☭
+## common-sequence
 
+Returns an array containing the initial items which all supplied iterables have in common.
 
-/**
- * Returns the initial elements which both input iterables have in common
- * @param a {Iterable} - first iterable to compare
- * @param b {Iterable} - second iterable to compare
- * @param ...n {Iterable} - nth iterable to compare
- * @returns {Array}
- * @alias module:common-sequence
- */
+For example, it could tell you that the common ancestor path between `'/Users/lloyd/75lb/dmd'` and `'/Users/lloyd/75lb/array-tools'` is `'/Users/lloyd/75lb'`. Or that the common identation across a series of lines is four spaces.
+
+#### Examples
+
+```js
+> pathA = '/Users/lloyd/Documents/75lb/dmd'.split('/');
+> pathB = '/Users/lloyd/Documents/75lb/array-tools'.split('/');
+> commonSequence(pathA, pathB).join('/');
+'/Users/lloyd/Documents/75lb'
+```
+
+or a more trivial example:
+
+```js
+> commonSequence([ 1, 2, 3 ], [ 1, 2, 4 ])
+[ 1, 2 ]
+```
+
+- **Type:** Package
+- **Supported runtimes:** Node.Js >= v12
+- **Module type:** JavaScript
+- **Exports:** One synchronous function
+
+*/
+
+/*☭
+### commonSequence
+
+Returns the initial elements which both input iterables have in common.
+
+- **Type:** `function`
+- **Returns:** `Array`
+
+¬
+  Param
+  Type
+  Description
+¬
+  a
+  `Iterable`
+  first iterable to compare
+¬
+  b
+  `Iterable`
+  second iterable to compare
+¬
+  ...n
+  `Iterable`
+  nth iterable to compare
+¬
+*/
+
 function commonSequence () {
   const iterables = arrayBack(arguments)
   if (!iterables.every(a => isIterable(a))) {

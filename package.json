@@ -26,7 +26,7 @@
   },
   "scripts": {
     "test": "75lb-nature test-runner test.js",
-    "docs": "75lb-nature jsdoc2md -t README.hbs index.js > README.md"
+    "docs": "dcdoc --inputs index.js --steps ~/Documents/dcdoc-zone/parse/index.js ~/Documents/dcdoc-zone/dcdoc/lib/quick-table.js ~/Documents/dcdoc-zone/template/index.js --template readme.template > readme.md"
   },
   "files": [
     "index.js"

@@ -32,7 +32,7 @@ or a more trivial example:
 */
 
 /*☭
-### commonSequence
+### commonSequence (a, b, ...n) : Array<any>
 
 Returns the initial elements which both input iterables have in common.
 

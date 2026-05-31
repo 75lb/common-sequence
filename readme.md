@@ -31,7 +31,7 @@ or a more trivial example:
 - **Module type:** JavaScript
 - **Exports:** One synchronous function
 
-### commonSequence
+### commonSequence (a, b, ...n) : Array<any>
 
 Returns the initial elements which both input iterables have in common.
 
